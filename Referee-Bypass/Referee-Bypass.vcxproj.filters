@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Stuff">
+      <UniqueIdentifier>{20b4bdc2-e158-4e08-ae77-4a577f4d2b1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stuff\main">
+      <UniqueIdentifier>{15ef28d7-14b4-4755-9ea9-07dfe1ddc7af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stuff\Minhook">
+      <UniqueIdentifier>{878408a8-2585-448a-b5c3-ab9c42921af4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stuff\OtherStuff">
+      <UniqueIdentifier>{b169c314-8316-40ee-8337-54c90c411bd4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Stuff\main</Filter>
+    </ClCompile>
+    <ClCompile Include="hook.c">
+      <Filter>Stuff\Minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="buffer.c">
+      <Filter>Stuff\Minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="trampoline.c">
+      <Filter>Stuff\Minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="hde64.c">
+      <Filter>Stuff\Minhook</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MinHook.h">
+      <Filter>Stuff\Minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="buffer.h">
+      <Filter>Stuff\Minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="trampoline.h">
+      <Filter>Stuff\Minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="hde64.h">
+      <Filter>Stuff\Minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="pstdint.h">
+      <Filter>Stuff\Minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="Stuff.h">
+      <Filter>Stuff\OtherStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="offsets.h">
+      <Filter>Stuff\OtherStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="table64.h">
+      <Filter>Stuff\Minhook</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
