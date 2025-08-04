@@ -37,7 +37,7 @@ namespace Carpet {
 
 		MH_CreateHook((void**)(GameAssembly + get_isflyingenabled), &get_isflyingenabled_H, (void**)&get_isflyingenabled_O);
 
-        MH_EnableHook((void**)(GameAssembly + get_isflyingenabled));
+                MH_EnableHook((void**)(GameAssembly + get_isflyingenabled));
 
 		printf("Hooks Done :D\n");
 	}
@@ -154,4 +154,5 @@ namespace Carpet {
 
         CloseHandle(snapshot);
     }
+
 };
