@@ -92,7 +92,6 @@ namespace Carpet {
                         if (NT_SUCCESS(status) && startAddress != nullptr) {
                             if (IsAddressInModuleRange(startAddress, moduleBase, moduleSize)) {
                                 SuspendThread(hThread);
-                                suspendedCount++;
                             }
                         }
                         CloseHandle(hThread);
@@ -156,4 +155,5 @@ namespace Carpet {
     }
 
 };
+
 
